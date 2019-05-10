@@ -13,7 +13,32 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &190678584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795073115977855553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f92eaa1e5fb4e52984aa48daad496e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &190678585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795073115977855553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97806934f354f4f0391d2c733504458e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthpoints: 20
 --- !u!1001 &5229267420475833581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83,11 +108,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7748045882240669375, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
         type: 3}
-      propertyPath: health
+      propertyPath: healthpoints
       value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 9159025980122079843, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef, type: 3}
+    - {fileID: 9007825983410278900, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef, type: 3}
+    - {fileID: 1907048890, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef, type: 3}
 --- !u!1 &795073115977855553 stripped
 GameObject:
