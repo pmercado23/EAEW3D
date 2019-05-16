@@ -12,6 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da0d52e60b8a435898b9815cdf767a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &9111588310263192536
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029010972808468676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1.7
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &6228766907889809822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -145,6 +159,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4549991899250260161, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 78be5954566d2d848918e51832341fa3, type: 2}
     - target: {fileID: 9007825983410278900, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
         type: 3}
       propertyPath: weaponDamage
@@ -155,11 +174,6 @@ PrefabInstance:
       propertyPath: healthpoints
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 4549991899250260161, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 78be5954566d2d848918e51832341fa3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef, type: 3}
 --- !u!1 &2029010972808468676 stripped
