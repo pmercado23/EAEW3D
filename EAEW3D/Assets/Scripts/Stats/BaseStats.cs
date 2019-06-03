@@ -9,6 +9,11 @@ namespace RPG.Stats
         [Range(1, 99)]
         [SerializeField] int startinglevel = 1;
         [SerializeField] CharacterClass charactorClass;
+        [SerializeField] Progression progression = null;
 
+        public float GetHealth()
+        {
+            return progression.GetHealth(charactorClass, startinglevel);
+        }
     }
 }

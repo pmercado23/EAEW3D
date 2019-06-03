@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Combat;
 using RPG.Core;
+using RPG.Resources;
 using RPG.Movement;
 
 namespace RPG.Control

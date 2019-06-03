@@ -171,6 +171,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4293939347610302383, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
+        type: 3}
+      propertyPath: charactorClass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293939347610302383, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
+        type: 3}
+      propertyPath: startinglevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4549991899250260161, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -229,11 +239,6 @@ PrefabInstance:
         type: 3}
       propertyPath: healthpoints
       value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293939347610302383, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
-        type: 3}
-      propertyPath: charactorClass
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef, type: 3}
