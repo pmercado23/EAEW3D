@@ -4,7 +4,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace RPG.Resources
+namespace RPG.Stats
 {
     public class ExpDisplay : MonoBehaviour
     {
