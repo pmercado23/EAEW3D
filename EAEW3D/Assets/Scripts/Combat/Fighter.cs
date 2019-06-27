@@ -20,7 +20,9 @@ namespace RPG.Combat
 
         private void Start()
         {
-            EquipWeapon(defaultWeapon);
+            if (currentWeapon == null){
+                EquipWeapon(defaultWeapon);
+            }
         }
 
         private void Update()

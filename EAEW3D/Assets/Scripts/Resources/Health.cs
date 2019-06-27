@@ -15,14 +15,20 @@ namespace RPG.Resources
         bool isDead = false;
      private void Start() 
      {
-         GetComponent<BaseStats>().onlevelUp += RegenerateHealth;
          if (healthpoints < 0)
          {
             healthpoints = GetComponent<BaseStats>().GetStat(Stat.Health);
          }
      }
 
-        private void RegenerateHealth()
+     private void OnEnable() {
+            GetComponent<BaseStats>().onlevelUp += RegenerateHealth;
+     }
+    
+    private void OnDisable() {
+            GetComponent<BaseStats>().onlevelUp -= RegenerateHealth;
+    }
+    private void RegenerateHealth()
         {
             float regenHealthpoints = GetComponent<BaseStats>().GetStat(Stat.Health) * (regnerationPercentage / 100);
             healthpoints = Mathf.Max(healthpoints, regenHealthpoints);
