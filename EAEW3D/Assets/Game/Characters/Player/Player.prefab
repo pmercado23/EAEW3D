@@ -26,6 +26,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da0d52e60b8a435898b9815cdf767a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7927596601996122194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029010972808468676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e113047b97e09d469d3784c6f13ca09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
 --- !u!1001 &6228766907889809822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171,6 +184,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4293939347610302383, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
+        type: 3}
+      propertyPath: charactorClass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293939347610302383, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
+        type: 3}
+      propertyPath: startinglevel
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293939347610302383, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
+        type: 3}
+      propertyPath: levelUpPartialEffect
+      value: 
+      objectReference: {fileID: 5513264081513268372, guid: 8df08a2e9d7cbfb42a26c7c13fc94358,
+        type: 3}
+    - target: {fileID: 4293939347610302383, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
+        type: 3}
+      propertyPath: shouldUseModifiers
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4549991899250260161, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -229,11 +263,6 @@ PrefabInstance:
         type: 3}
       propertyPath: healthpoints
       value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293939347610302383, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
-        type: 3}
-      propertyPath: charactorClass
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef, type: 3}

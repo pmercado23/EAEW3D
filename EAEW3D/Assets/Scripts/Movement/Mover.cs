@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using RPG.Core;
+using RPG.Resources;
 using RPG.Saving;
 using UnityEngine;
 using UnityEngine.AI;
@@ -15,10 +16,13 @@ namespace RPG.Movement
         NavMeshAgent navMeshAgent;
         Health health;
 
-        private void Start()
-        {
+        private void Awake() {
             health = GetComponent<Health>();
             navMeshAgent = GetComponent<NavMeshAgent>();
+        }
+
+        private void Start()
+        {
         }
 
         void Update()

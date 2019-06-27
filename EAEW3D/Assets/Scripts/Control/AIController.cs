@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Combat;
 using RPG.Core;
+using RPG.Resources;
 using RPG.Movement;
 
 namespace RPG.Control
@@ -29,15 +30,16 @@ namespace RPG.Control
         float timeSinceLastArivedAtWayPoint = Mathf.Infinity;
         int currentWayPointIndex = 0;
 
-        public void Start()
-        {
+        private void Awake() {
             fighter = GetComponent<Fighter>();
             health = GetComponent<Health>();
             mover = GetComponent<Mover>();
             player = GameObject.FindWithTag("Player");
+        }
 
+        public void Start()
+        {
             gaurdposition = transform.position;
-
         }
 
         private void Update()
