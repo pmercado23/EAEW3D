@@ -194,6 +194,12 @@ PrefabInstance:
       propertyPath: startinglevel
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4293939347610302383, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
+        type: 3}
+      propertyPath: levelUpPartialEffect
+      value: 
+      objectReference: {fileID: 5513264081513268372, guid: 8df08a2e9d7cbfb42a26c7c13fc94358,
+        type: 3}
     - target: {fileID: 4549991899250260161, guid: 70af1f4fb4d91d54fbd07b1d0f0f99ef,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
