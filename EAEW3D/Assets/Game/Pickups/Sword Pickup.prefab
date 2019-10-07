@@ -124,12 +124,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5540805135388864683, guid: f486a2aa06fa24e808a706ce70bddf42,
-        type: 3}
-      propertyPath: weapon
-      value: 
-      objectReference: {fileID: 11400000, guid: 057db7ed2b83a436bb3de758cdec7ccb,
-        type: 2}
     - target: {fileID: 7812437805153366144, guid: f486a2aa06fa24e808a706ce70bddf42,
         type: 3}
       propertyPath: m_Radius
@@ -140,6 +134,12 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5540805135388864683, guid: f486a2aa06fa24e808a706ce70bddf42,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: e74939b8353d49f41a906cd94a8f1184,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f486a2aa06fa24e808a706ce70bddf42, type: 3}
 --- !u!4 &7044105240600010402 stripped

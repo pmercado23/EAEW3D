@@ -34,7 +34,10 @@ namespace RPG.Combat
 
         private void Start()
         {
-            currentWeapon.ForceInit();
+            if (currentWeapon == null)
+            {
+                EquipWeapon(defaultWeapon);
+            }
         }
 
         private void Update()

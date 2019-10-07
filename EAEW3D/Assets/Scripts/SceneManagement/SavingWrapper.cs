@@ -10,7 +10,7 @@ namespace RPG.SceneManagement
 
         [SerializeField] float fadeInTime = 0.2f;
 
-        private void Awake() 
+        private void Awake()
         {
             StartCoroutine(LoadLastScene());
         }
@@ -18,25 +18,24 @@ namespace RPG.SceneManagement
         private IEnumerator LoadLastScene()
         {
             yield return GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile);
-            Fader fade = FindObjectOfType<Fader>();
-            fade.FadeOutImmediate();
-            yield return fade.FadeIn(fadeInTime);
+            Fader fader = FindObjectOfType<Fader>();
+            fader.FadeOutImmediate();
+            yield return fader.FadeIn(fadeInTime);
         }
 
-        private void Update() { 
+        private void Update()
+        {
             if (Input.GetKeyDown(KeyCode.S))
             {
                 Save();
             }
-
             if (Input.GetKeyDown(KeyCode.L))
             {
                 Load();
             }
-
-            if (Input.GetKeyDown(KeyCode.K))
+            if (Input.GetKeyDown(KeyCode.Delete))
             {
-                DeleteSave();
+                Delete();
             }
         }
 
@@ -50,7 +49,7 @@ namespace RPG.SceneManagement
             GetComponent<SavingSystem>().Save(defaultSaveFile);
         }
 
-        public void DeleteSave()
+        public void Delete()
         {
             GetComponent<SavingSystem>().Delete(defaultSaveFile);
         }
